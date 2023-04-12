@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        색을 선택해주세요: <input type="color"><br>
+        숫자를 입력해주세요: <input type="number" name="" id="" max="100" min="0" stemp="10" value="50"><br>
+        슬라이드를 움직여 만족도를 입력하세요(1~10) <br>
+        <input type="range" max="10" min="1" value="5"><br>
+        성별을 선택하세요<br>
+        <select name="gender">
+            <option value="female">여성</option>
+            <option value="male">남성</option>
+        </select><br>
+        선호하는 브라우저를 선택주세요<br>
+        <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="구글 크롬">
+            <option value="엣지">
+            <option value="오페라">
+            <option value="사파리">
+            <option value="파이어폭스">
+        </datalist>
+        <input type="button" value="제출"><br>
+
+        <fieldset>
+            <legend>인적사항입혁</legend>
+            이름: <input type="text"><br>
+            전화번호: <input type="text"><br>
+            주소: <input type="text">
+        </fieldset><br><br><br><br><br>
+
+        <h2>1.다음지문에서 설명하는 사람은 누구인가?</h2>
+        <fieldset>
+            <legend>보기</legend>
+            Born in Maida Vale, London, Turing was raised in southern England. He graduated at King's College, Cambridge, with a degree in mathematics. Whilst he was a fellow at Cambridge, he published a proof demonstrating that some purely mathematical yes–no questions can never be answered by computation and defined a Turing machine, and went on to prove that the halting problem for Turing machines is undecidable. In 1938, he obtained his PhD from the Department of Mathematics at Princeton University. During the Second World War, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence. For a time he led Hut 8, the section that was responsible for German naval cryptanalysis. Here, he devised a number of techniques for speeding the breaking of German ciphers, including improvements to the pre-war Polish bomba method, an electromechanical machine that could find settings for the Enigma machine. Turing played a crucial role in cracking intercepted coded messages that enabled the Allies to defeat the Axis powers in many crucial engagements, including the Battle of the Atlantic. <br>
+            정답입력: <input type="text" required placeholder="정답을 입력하세요"><br>
+            <br><input type="radio" name="select" id="q" vlaue="1번 유도윤">
+            <label for="q">1번 유도윤</label>
+            <br><input type="radio" name="select" id="w" vlaue="2번 이강민">
+            <label for="w">2번 이강민</label>
+            <br><input type="radio" name="select" id="e" vlaue="3번 김태경">
+            <label for="e">3번 김태경</label>
+            <br><input type="radio" name="select" id="r" vlaue="4번 김정준">
+            <label for="r">4번 김정준</label>
+            <br><input type="radio" name="select" id="t" vlaue="5번 Alan Turing">
+            <label for="t">5번 Alan Turing</label><br>
+            <br><br><br><br><br>
+
+            서술형답안 파일 제출:
+            <input type="file" name="" id="" accept="image/jpg, image/png">
+        </fieldset>
+    </form>
+</body>
+</html>
