@@ -1,0 +1,24 @@
+body{
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    height: 90vh;
+}
+
+a:link{
+    color: greenyellow;
+}
+
+a:visited{
+    color: cornflowerblue;
+}
+
+span:hover{
+    background-color: crimson;
+}
+
+span{
+    font-weight: 700;
+}
