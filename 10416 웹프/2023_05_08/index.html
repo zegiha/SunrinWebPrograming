@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.Four{
+            border: 5px solid red;
+            border-radius: 5px;
+        }
+        p.Five{
+            border: 10px dotted yellowgreen
+        }
+        p.Six{
+            border: 1px dashed blue;
+        }
+
+        p.borderImg{
+            border: 30px solid transparent;
+            width: 300px;
+            height: 50px;
+            border-image: url(border.png) 30 27 round;
+        }
+        p.test{
+            border: blue 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <p style="border-style: none">none</p>
+    <p style="border-style: dotted">dotted</p>
+    <p style="border-style: dashed">dashed</p>
+    <p style="border-style: solid">solid</p>
+    <p style="border-style: double">double</p>
+    <p style="border-style: groove">groove</p>
+    <p style="border-style: ridge">ridge</p>
+    <p style="border-style: inset">inset</p>
+    <p style="border-style: outset">outset</p>
+
+    <p class="Four">1학년 4반</p>
+    <p class="Five">1학년 5반</p>
+    <p class="Six">1학년 6반</p>
+
+    <p class="borderImg">Border Img</p>
+
+    <p class="test">The answer is correct</p>
+</body>
+</html>
