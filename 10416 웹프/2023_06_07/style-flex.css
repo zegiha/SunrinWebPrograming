@@ -1,0 +1,17 @@
+body{
+    height: 100%;
+}
+.container{
+    width: 250;
+    display: flex;
+    background-color: royalblue;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
