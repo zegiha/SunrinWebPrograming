@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .yellow{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            background-color: yellow;
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            transition: width 2s, height 2s, border 2s, transform 2s;
+            -webkit-transition: width 2s, height 2s, border 2s, -webkit-transform 2s;
+        }
+        .yellow:hover{
+            width: 75vw;
+            height: 75vh;
+            border: 10px solid red;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="yellow">마우스를 올려보세요</div>
+</body>
+</html>
