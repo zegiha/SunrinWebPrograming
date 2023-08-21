@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="light" src="./picture/light-bulb1.png" alt="전등 이미지">
+    <button onclick="change()">전등스위치</button>
+    <button onclick="temp()">이름 적기</button>
+    <div id="name">이름</div>
+    <script>
+        let sw = false, str1 = 'hello world';
+
+        function temp(){
+            let userName = prompt('이름을 입력해주세요');
+            const element = document.getElementById('name');
+            element.innerHTML = '<div>이름: ' + userName + '</div>'
+        }
+
+        function change(){
+            sw = !sw;
+            sw ? document.getElementById('light').src='./picture/light-bulb1.png' :
+            document.getElementById('light').src='./picture/light-bulb2.png';
+            console.log('the light is ' +  sw);
+        }
+
+        //팝업출력
+        //alert(str1);
+        //confirm(str1);
+        //let input = prompt('이름을 입력해주세요');
+        //document.write('이름: ' + input);
+    </script>
+</body>
+</html>
