@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    숫자1: <input type="text" id="num1"><br>
+    숫자2: <input type="text" id="num2"><br>
+    <input type="button" value="+" class="button" onclick="add('+')">
+    <input type="button" value="-" class="button" onclick="add('-')">
+    <input type="button" value="*" class="button" onclick="add('*')">
+    <input type="button" value="/" class="button" onclick="add('/')"><br>
+    연산결과: <input type="text" id="ans">
+
+    <script>
+        function add(op) {
+            const num1 = Number(document.getElementById('num1').value);
+            const num2 = Number(document.getElementById('num2').value);
+            let ans = 0;
+
+            if(op === '+') ans = num1 + num2;
+            if(op === '-') ans = num1 - num2;
+            if(op === '*') ans = num1 * num2;
+            if(op === '/') ans = num1 / num2;
+
+            document.getElementById('ans').value = ans;
+        }
+    </script>
+</body>
+</html>
