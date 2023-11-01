@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        이름(6-8 문자): <input type='text' id='name' />
+        <input type='button'
+            onclick="checkLength(document.getElementById('name'), 6, 8)"
+            value='확인' />
+    </form>
+    <script>
+        function checkLength(elem, min, max) {
+            let s = elem.value;
+            if(!isNaN(s)) alert('문자가 아닙니다.');
+            else if(s.length < min) alert('길이가 너무 짧습니다.');
+            else if(s.length > max) alert('길이가 너무 깁니다.');
+        }
+    </script>
+</body>
+</html>

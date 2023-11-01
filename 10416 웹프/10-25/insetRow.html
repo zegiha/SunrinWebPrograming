@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, td{
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <td>(1, 1) cell</td>
+            <td>(1, 2) cell</td>
+        </tr>
+        <tr>
+            <td>(2, 1) cell</td>
+            <td>(2, 2) cell</td>
+        </tr>
+    </table>
+    <input type="button" value="click to make new" onclick="creatTableRow()">
+    <input type="button" value="click to delete last" onclick="deleteTableRow()">
+    <script>
+        let rowNum = 3;
+
+        function deleteTableRow() {
+            const table = document.getElementById('table');
+            table.deleteRow(-1);
+
+            rowNum--;
+        }
+
+        function creatTableRow(){
+            const table = document.getElementById('table');
+
+            const newRow = table.insertRow(-1);
+
+            const newCell0 = newRow.insertCell(0);
+            const newCell1 = newRow.insertCell(1);
+
+            newCell0.innerText = `(${rowNum}, 1) cell`;
+            newCell1.innerText = `(${rowNum}, 2) cell`;
+
+            rowNum++;
+        }
+    </script>
+</body>
+</html>

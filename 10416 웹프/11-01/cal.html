@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script>
+    function cal(ansInN) {
+        const ans = Number(document.getElementById('answer').value);
+        const sol = Number(eval(document.getElementById('problem').value));
+        const nextProblem1 = Math.floor(Math.random() * 100);
+        const nextProblem2 = Math.floor(Math.random() * 100);
+        const nextProblem3 = Math.floor(Math.random() * 100);
+        const nextProblem4 = Math.floor(Math.random() * 100);
+        if(ans === sol) alert('정답입니다!');
+        else alert(`오답입니다, 정답은 ${sol}입니다.`);
+
+        document.getElementById('problem').value = `${nextProblem1} + ${nextProblem2} * ${nextProblem3} - ${nextProblem4}`;
+    }
+    function getAnsIn() {
+        const ans = Number(document.getElementById('answer').value);
+        const random = Math.floor((Math.random() * 10) - 6);
+        for(let i = 0; i < 4; i++) {
+            // if
+            // document.getElementById(`ansIn${i}`).innerHTML = 
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>Math Quiz</h1>
+    <input type="text" id="problem" value="12*2+20-30"><br>
+    <input type="text" id="answer">
+    <div class="container">
+        <div id="ansIn1" onclick="cal(0)"></div>
+        <div id="ansIn2" onclick="cal(1)"></div>
+        <div id="ansIn3" onclick="cal(2)"></div>
+        <div id="ansIn4" onclick="cal(3)"></div>
+    </div>
+</body>

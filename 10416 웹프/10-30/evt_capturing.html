@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <style>
+        p,
+        div {
+            margin: 10px;
+            border: 1px solid rgb(199, 89, 25);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">DIV
+        <div id="p1">P
+            <div id="div2">DIV</div>
+        </div>
+    </div>
+    <script>
+        let elem1 = document.getElementById("div1");
+        elem1.addEventListener("click", function () { alert(`캡처링 div 1`); }, false);
+        elem1.addEventListener("click", function () { alert(`버블링 div 1`); });
+        let = elem2 = document.getElementById("p1");
+        elem2.addEventListener("click", function () { alert(`캡처링 div 2`); }, false);
+        elem2.addEventListener("click", function () { alert(`버블링 div 2`); });
+        let elem3 = document.getElementById("div2");
+        elem1.addEventListener("click", function () { alert(`캡처링 div 3`); }, true);
+        elem1.addEventListener("click", function () { alert(`버블링 div 3`); });
+    </script>
+</body>
+
+</html>
